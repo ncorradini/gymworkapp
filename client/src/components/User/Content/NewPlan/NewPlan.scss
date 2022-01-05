@@ -1,0 +1,179 @@
+.newplan {
+    width: 900px;
+    margin-left: 50px;
+    color: #fff;
+
+    &__title {
+        padding: 20px 0 10px 0;
+        font-weight: lighter;
+        font-size: 40px;
+    }
+
+    &__description {
+        padding: 10px 0;
+        font-weight: lighter;
+        font-size: 15px;
+    }
+
+    &__selection {
+        button {
+            padding: 12px;
+            margin: 5px 10px 20px 0;
+            border-radius: 10px;
+            font-size: 15px;
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff;
+            transition: 0.2s;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #445752;
+                border-color: #445752;
+            }
+        }
+    }
+
+    &__routine {
+        &-title {
+            padding: 10px 0 5px 0;
+        }
+
+        &-selection {
+            padding-bottom: 10px;
+            font-size: 14px;
+
+            button {
+                padding: 5px 10px;
+                margin-right: 5px;
+                border-radius: 5px;
+                background: transparent;
+                border: 1px solid #fff;
+                color: #fff;
+                transition: 0.2s;
+
+                &:hover {
+                    background-color: #445752;
+                    border-color: #445752;
+                }
+            }
+        }
+
+        .active {
+            background-color: #445752;
+            border-color: #445752;
+        }
+
+        &__title-day {
+            padding: 5px 10px;
+            width: 90%;
+            background-color: #445752;
+            border-radius: 10px;
+            margin: 10px 0 20px 0;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+
+        &--day {
+            width: 900px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__ejercise {
+                width: 100%;
+                margin-bottom: 10px;
+
+                h4 {
+                    width: 10%;
+                    float: left;
+                    font-weight: lighter;
+                    padding: 5px;
+                }
+
+                select {
+                    width: 80%;
+                    margin-left: 10px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    background: transparent;
+                    color: #fff;
+
+                    option {
+                        background-color: #445752;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        &--create {
+            padding: 10px 10px;
+            width: 15%;
+            color: #fff;
+            border: 2px solid #445752;
+            background: #44575227;
+            border-radius: 10px;
+            margin: 20px 0;
+            transition: 0.2s;
+            font-size: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #445752;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .newplan {
+        width: 90%;
+    
+        &__routine {
+            &__title-day {
+                width: 63%;
+            }
+
+            &--day {
+                width: 70%;
+
+                h4 {
+                    width: 15%;
+                }
+
+                select {
+                    width: 75%;
+                }
+            }
+            &--create {
+                width: 20%;
+            }
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .newplan {
+        width: 90%;
+        margin-left: 0px;
+        margin: auto;
+    
+        &__routine {
+            &-selection {
+                display: flex;
+            }
+
+            &__title-day {
+                width: 90%;
+            }
+
+            &--day {
+                width: 100%;
+            }
+
+            &--create {
+                width: 95%;
+            }
+        }
+    }
+}

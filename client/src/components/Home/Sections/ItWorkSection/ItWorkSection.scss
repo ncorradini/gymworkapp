@@ -1,0 +1,125 @@
+.itwork-section {
+    height: 850px;
+    color: #fff;
+    font-weight: lighter;
+    line-height: 28px;
+
+    &__container {
+        width: 360px;
+        margin-top: 150px;
+        float: left;
+    }
+
+    &__title {
+        font-size: 45px;
+        font-weight: lighter;
+        margin-bottom: 40px;
+
+        span {
+            font-weight: bold;
+            -webkit-text-stroke: 1px #fff;
+            color: transparent;
+        }
+
+        strong {
+            color: #AADC40;
+        }
+    }
+
+    &__text {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__button {
+        width: 100px;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #AADC40;
+        color: #252F2E;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #8eb930;
+        }
+    }
+
+    &__img {
+        margin-top: 150px;
+        width: 50%;
+        float: right;
+    }
+}
+
+@media (max-width:960px) { 
+    .itwork-section {
+        &__container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        &__title {
+            text-align: center;
+            width: 100%;
+        }
+    
+        &__text {
+            margin: 20px auto 0 auto;
+            text-align: center;
+            width: 450px;
+        }
+
+        &__list {
+            text-align: center;
+            width: 100%;
+        }
+
+        &__button {
+            &--container {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__img {
+            display: none;
+        }
+    }
+}
+
+@media (max-width:480px) { 
+    .itwork-section {
+        &__container {
+            width: 90%;
+        }
+    
+        &__title {
+            width: 100%;
+        }
+    
+        &__text {
+            width: 90%;
+        }
+
+        &__list {
+            width: 100%;
+        }
+
+        &__button {
+            &--container {
+                width: 100%;
+            }
+        }
+
+      
+    }
+}

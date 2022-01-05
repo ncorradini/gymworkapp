@@ -1,0 +1,122 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 1;
+    margin-top: 70px;
+    padding-top: 30px;
+    background-color: #2d3835;
+    transition: 0.2s;
+    overflow-y: auto;
+
+    a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        line-height: 60px;
+        text-decoration: none;
+        padding-left: 22px;
+        box-sizing: border-box;
+        transition: 0.2s;
+        transition-property: background;
+        font-size: 16px;
+        font-weight: lighter;
+      
+
+        &:hover {
+            background: #445752;
+        }
+
+        i {
+            padding-right: 20px;
+        }
+    }
+}
+
+#check:checked ~ .sidebar{
+    left: -185px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+
+#check:checked ~ .sidebar a{
+    width: 100%;
+    font-size: 16px;
+    margin-left: 165px;
+    padding-left: 40px;
+}
+
+@media screen and (max-width: 780px){
+.sidebar{
+    display: none;
+}
+
+#sidebar_btn{
+    display: none;
+}
+
+.sidebar-mobile {
+    display: block;
+    width: 100%;
+
+    &__icon {
+        background: #222;
+        width: 100%;
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+
+        &--btn {
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            transition: 0.2s;
+            transition-property: color;
+
+            &:hover {
+                color: #445752;
+            }
+        }
+    }
+
+    &__items {
+        background-color: #2d3835;
+        display: none;
+
+        a {
+            color: #fff;
+            display: block;
+            text-align: center;
+            letter-spacing: 1px;
+            line-height: 60px;
+            text-decoration: none;
+            box-sizing: border-box;
+            transition: 0.2s;
+            transition-property: background;
+            font-weight: lighter;
+
+            &:hover {
+                background: #445752;
+            }
+
+            i {
+                padding-right: 10px;
+            }
+        }
+    }
+}
+
+.active{
+    display: block;
+}
+}
+
+#check:checked ~ .content{
+    margin-left: 150px;
+}

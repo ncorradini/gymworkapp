@@ -1,0 +1,129 @@
+.home-section {
+    height: 520px;
+    width: 1100px;
+    margin: auto;
+
+     &__container {
+         width: 700px;
+         margin-top: 150px;
+         float: left;
+     }
+
+     &__title {
+         font-size: 50px;
+         -webkit-text-stroke: 1px #fff;
+         color: transparent; 
+
+         span {
+             font-size: 60px;
+             color: #fff;
+
+             strong {
+                 color: #AADC40;
+                 -webkit-text-stroke: 1px #AADC40;
+             }
+         }
+     }
+
+     &__text {
+         width: 470px;
+         color: #fff;
+         font-weight: lighter;
+         margin-top: 10px;
+         line-height: 28px;
+
+         strong {
+             font-weight: bolder;
+         }
+     }
+
+     &__button {
+         width: 100px;
+         margin-top: 20px;
+         padding: 10px;
+         border-radius: 10px;
+         border: none;
+         background-color: #AADC40;
+         color: #252F2E;
+         cursor: pointer;
+
+         &:hover {
+             background-color: #8eb930;
+         }
+     }
+
+     &__img {
+         width: 400px;
+         margin-top: 100px;
+         float: right;
+     }
+}
+
+@media (max-width:960px) {
+    .home-section {
+        width: 700px;
+    
+         &__container {
+             width: 400px;
+         }
+    
+         &__title {
+             font-size: 30px;
+    
+             span {
+                 font-size: 35px;
+             }
+         }
+    
+         &__img {
+             width: 300px;
+             margin-top: 200px;
+         }
+    }    
+}
+
+@media (max-width:768px) {
+    .home-section {
+        width: 600px;
+    
+         &__container {
+             width: 600px;
+         }
+    
+         &__title {
+             font-size: 40px;
+    
+             span {
+                 font-size: 45px;
+             }
+         }
+    
+         &__img {
+             display: none;
+         }
+    }    
+}
+
+@media (max-width:480px) {
+    .home-section {
+        width: 90%;
+    
+         &__container {
+             width: 100%;
+             margin-top: 100px;
+         }
+    
+         &__title {
+             font-size: 30px;
+    
+             span {
+                 font-size: 35px;
+             }
+         }
+
+         &__text {
+             width: 90%;
+            font-size: 14px;
+        }
+    }    
+}

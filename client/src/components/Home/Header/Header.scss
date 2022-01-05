@@ -1,0 +1,134 @@
+.header-home {
+    width: 1100px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__background {
+        width: 100%;
+        background: linear-gradient(330deg, rgba(43,54,51,1) 0%, rgba(31,40,41,1) 48%, rgba(29,36,36,1) 100%);
+    }
+
+    &__logo {
+        color: #fff;
+        width: 200px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+
+        span {
+            color: #AADC40;
+        }
+    } 
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        width: 600px;
+        font-weight: lighter;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 30px;
+            cursor: pointer;
+
+            &:hover {
+                color: #cecece;
+            }
+        }
+    }
+
+    &__login {
+        width: 300px;
+
+        button {
+            width: 120px;
+            padding: 12px 10px;
+            margin-left: 10px;
+            float: right;
+            border-radius: 10px;
+            border: 1px solid #fff;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        &--active {
+            color: #fff;
+            background: transparent;
+        }
+
+        &--active, &--inactive {
+            &:hover {
+                color: #fff;
+                background-color: #445752;
+                border-color: #445752;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .header-home {
+        width: 700px;
+        
+        &__logo {   
+            width: 10px;
+        } 
+
+        &__menu {
+            width: 380px;
+            margin-left: 130px;
+            font-size: 14px;
+        }
+
+        &__login {
+            width: 180px;
+    
+            button {
+                width: 80px;
+                padding: 10px 8px;
+                font-size: 12px;
+            }    
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .header-home {
+        width: 90%;
+        
+        &__logo {   
+            width: 10%;
+        } 
+
+        &__menu {
+            display: none;
+        }
+
+        &__login {
+            width: 90%;  
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .header-home {
+        width: 90%;
+        
+        &__logo {   
+            width: 10%;
+        } 
+
+        &__menu {
+            display: none;
+        }
+
+        &__login {
+            width: 90%;  
+        }
+    }
+}
